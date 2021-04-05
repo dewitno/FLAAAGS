@@ -10,19 +10,18 @@ import java.util.*;
 import java.io.*;
 import java.awt.Color;
 
-
 /** 
  * draws flags from different countries
  * 
  * @author dewitno
  * @version v1.5/4/2021
  */
-public class FLAAGS{
-
+public class FLAAAAGS
+{
     /**
      * Constructer for FLAAGS!
      */
-    public FLAAGS(){
+    public FLAAAAGS(){
         UI.initialise();
         UI.addButton("Quit", UI::quit);
     }
@@ -84,10 +83,10 @@ public class FLAAGS{
         // makes flag according to parameters
         this.drawFlag(300, 300, 60, 90, true, 255, 0, 0, 255, 255, 255, 0, 0, 255);
         this.drawFlag(300, 370, 50, 75, false, 0, 0, 255, 255, 255, 255, 255, 0, 0);
-        this.drawFlag(400, 300, 60, 100, true, 0, 0, 0, 255, 0, 0, 255, 204, 0);
-        this.drawFlag(400, 370, 50, 100, false, 22, 155, 98, 255, 255, 255, 255, 136, 62);
+        this.drawFlag(410, 300, 60, 100, true, 0, 0, 0, 255, 0, 0, 255, 204, 0);
+        this.drawFlag(410, 370, 50, 100, false, 22, 155, 98, 255, 255, 255, 255, 136, 62);
         this.drawFlag(300, 430, 60, 100, false, 0, 0, 0, 253, 218, 36, 239, 51, 64);
-        this.drawFlag(400, 430, 60, 100, false, 0, 140, 69, 244, 245, 240, 205, 33, 42);
+        this.drawFlag(410, 430, 60, 100, false, 0, 140, 69, 244, 245, 240, 205, 33, 42);
         this.drawSwissFlag();
     }
     
@@ -95,9 +94,7 @@ public class FLAAGS{
      * @param args
      */
     public static void main(String[] args){
-        FLAAGS obj = new FLAAGS(); // creates new flag object
+        FLAAAAGS obj = new FLAAAAGS(); // creates new flag object
         obj.doDrawFlag();
     }
-
 }
-
