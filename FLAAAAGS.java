@@ -56,13 +56,13 @@ public class FLAAAAGS
     }
     
     /**
-     * draws the swiss flag
+     * draws the Swiss flag
      */
     public void drawSwissFlag() {
         // variables for the swiss flag
-        double left = 100;
-        double top = 100;
-        double size = 160;
+        double left = 170;
+        double top = 300;
+        double size = 80;
         // sets line width to 1
         UI.setLineWidth(1);
         // sets background colour of flag to red
@@ -77,14 +77,14 @@ public class FLAAAAGS
     }
     
     /**
-     * draws the Thais flag
+     * draws the Thai flag
      */
     public void drawThaiFlag() {
         Color col1 = new Color(165, 25, 49);
         Color col2 = new Color(244, 245, 248);
         Color col3 = new Color(45, 42, 74);
-        double left = 410;
-        double top = 500;
+        double left = 260;
+        double top = 300;
         double height = 60;
         double width = 100;
         
@@ -99,19 +99,38 @@ public class FLAAAAGS
     }
     
     /**
+     * draws the japanese flag
+     */
+    public void drawJapaneseFlag() {
+        Color col1 = new Color(244, 245, 240);
+        Color col2 = new Color(190, 0, 41);
+        double left  = 370;
+        double top = 300;
+        double height = 60;
+        double width = 90;
+        
+        UI.setLineWidth(1);
+        UI.setColor(col1);
+        UI.fillRect(left, top, width, height);
+        UI.setColor(col2);
+        UI.fillOval(left+width*27/90, top+height*1/5, 36, 36);
+    }
+    /**
      * draws the flag with set parameters
      */
     public void doDrawFlag() {
         // makes flag according to parameters
-        this.drawThreeStripeFlag(300, 300, 60, 90, true, 255, 0, 0, 255, 255, 255, 0, 0, 255);
-        this.drawThreeStripeFlag(300, 370, 50, 75, false, 0, 0, 255, 255, 255, 255, 255, 0, 0);
-        this.drawThreeStripeFlag(410, 300, 60, 100, true, 0, 0, 0, 255, 0, 0, 255, 204, 0);
-        this.drawThreeStripeFlag(410, 370, 50, 100, false, 22, 155, 98, 255, 255, 255, 255, 136, 62);
-        this.drawThreeStripeFlag(300, 430, 60, 100, false, 0, 0, 0, 253, 218, 36, 239, 51, 64);
-        this.drawThreeStripeFlag(410, 430, 60, 100, false, 0, 140, 69, 244, 245, 240, 205, 33, 42);
-        this.drawThreeStripeFlag(300, 500, 60, 100, true, 255, 255, 255, 0, 0, 255, 255, 0, 0);
+        this.drawThreeStripeFlag(100, 100, 60, 90, true, 255, 0, 0, 255, 255, 255, 0, 0, 255);
+        this.drawThreeStripeFlag(100, 170, 50, 75, false, 0, 0, 255, 255, 255, 255, 255, 0, 0);
+        this.drawThreeStripeFlag(210, 100, 60, 100, true, 0, 0, 0, 255, 0, 0, 255, 204, 0);
+        this.drawThreeStripeFlag(210, 170, 50, 100, false, 22, 155, 98, 255, 255, 255, 255, 136, 62);
+        this.drawThreeStripeFlag(320, 100, 60, 100, false, 0, 0, 0, 253, 218, 36, 239, 51, 64);
+        this.drawThreeStripeFlag(430, 100, 60, 100, false, 0, 140, 69, 244, 245, 240, 205, 33, 42);
+        this.drawThreeStripeFlag(430, 170, 60, 100, true, 255, 255, 255, 0, 57, 166, 213, 43, 30);
+        this.drawThreeStripeFlag(320, 170, 60, 100, true, 255, 0, 0, 255, 255, 255, 255, 0, 0);
         this.drawThaiFlag();
         this.drawSwissFlag();
+        this.drawJapaneseFlag();
     }
     
     /**
